@@ -1,1 +1,3 @@
-# FLAMIA---JC
+# Proyecto Final de JC: Flamia
+Flamia es un emprendimiento innovador dedicado a la elaboración de velas comestibles artesanales. 
+Nuestros productos combinan creatividad, sabor y diseño, ofreciendo una experiencia única para compartir en ocasiones especiales. Cada vela está elaborada con ingredientes aptos para el consumo, brindando una alternativa original que transforma los postres y celebraciones en momentos inolvidables.
