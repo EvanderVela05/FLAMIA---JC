@@ -1,113 +1,305 @@
+
 <!DOCTYPE html>
 <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FLAMIA: velas comestibles artesanales para celebraciones especiales.">
+    <title>FLAMIA | UN BOCADO ARDIENTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FLAMIA | UN BOCADO ARDIENTE</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<header class="encabezado">
+    <section class="logo">
+        <img src="Logo_FLAMIA.png" alt="Logo FLAMIA">
+        <h1>FLAMIA: UN BOCADO ARDIENTE</h1>
+    </section>
 
-    <body>
-        <header class="encabezado">
+    <nav class="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#carrito">Carrito</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
 
-        <section class="logo">
-        <div class="Logo">
-            <img src="Logo_FLAMIA.png" alt="Logo FLAMIA">
+<main>
+    <section id="inicio">
+        <div class="titulo-section">
+            <h2>¿Qué es FLAMIA y para qué fue creada?</h2>
         </div>
 
-        <h1>FLAMIA: UN BOCADO ARDIENTE</h1>
-        </section>   
-        
-        <nav class="navegacion">
-            <a href="#" id="principal">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#productos">Productos</a>
-                <a href="#contacto">Contacto</a>
-        </nav>
-        <header>
+        <div class="contenido-inicio" id="nosotros">
+            <article class="informacion">
+                <h3>¿Quiénes somos y por qué creamos FLAMIA?</h3>
+                <p>Somos un emprendimiento que busca innovar en las celebraciones mediante ideas creativas y originales.</p>
+                <p>FLAMIA fue creada para transformar las velas tradicionales en una experiencia diferente, haciendo que cada celebración sea más especial.</p>
+                <p>Nuestro objetivo es ofrecer productos que no solo decoren, sino que también sorprendan y deleiten a quienes los disfrutan.</p>
+            </article>
 
-    <main>
-            <section id="inicio" class="section-inicio">
+            <article class="informacion">
+                <h3>¿Qué es FLAMIA?</h3>
+                <p>FLAMIA es un emprendimiento de velas comestibles artesanales que combina creatividad, sabor y diseño.</p>
+                <p>Nuestras velas ofrecen sabores y presentaciones innovadoras.</p>
+                <p>Creamos productos originales para decorar y acompañar diferentes postres, convirtiendo las celebraciones en experiencias más llamativas y especiales.</p>
+            </article>
+        </div>
+    </section>
 
-                <div class="titulo-section">
-                    <h2>¿Qué es FLAMIA y para qué fue creada?</h2>
+    <section id="productos">
+        <div class="titulo-section">
+            <h2>NUESTROS PRODUCTOS</h2>
+            <p>Todas las velas tienen un precio de $15.000 COP por unidad.</p>
+        </div>
+
+        <div class="contenedor-productos">
+
+            <article class="producto" data-nombre="Vela de chocolate" data-precio="15000">
+                <img src="Imagen_VELA DE CHOCOLATE.png" alt="Vela de chocolate">
+                <div class="producto-informacion">
+                    <h3>VELA DE CHOCOLATE</h3>
+                    <p>Vela comestible con sabor a chocolate, dulce y cremoso.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-chocolate">Cantidad:</label>
+                    <input id="cantidad-chocolate" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de vainilla" data-precio="15000">
+                <img src="Imagen_VELA DE VAINILLA.png" alt="Vela de vainilla">
+                <div class="producto-informacion">
+                    <h3>VELA DE VAINILLA</h3>
+                    <p>Vela comestible con sabor a vainilla, suave y aromática.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-vainilla">Cantidad:</label>
+                    <input id="cantidad-vainilla" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de frutos rojos" data-precio="15000">
+                <img src="Imagen_VELA DE FRUTOS ROJOS.png" alt="Vela de frutos rojos">
+                <div class="producto-informacion">
+                    <h3>VELA DE FRUTOS ROJOS</h3>
+                    <p>Vela comestible con sabor a frutos rojos, fresca y afrutada.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-frutos-rojos">Cantidad:</label>
+                    <input id="cantidad-frutos-rojos" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de fresa" data-precio="15000">
+                <img src="Imagen_VELA DE FRESA.png" alt="Vela de fresa">
+                <div class="producto-informacion">
+                    <h3>VELA DE FRESA</h3>
+                    <p>Vela comestible con sabor a fresa.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-fresa">Cantidad:</label>
+                    <input id="cantidad-fresa" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de limón" data-precio="15000">
+                <img src="Imagen_VELA DE LIMON.png" alt="Vela de limón">
+                <div class="producto-informacion">
+                    <h3>VELA DE LIMÓN</h3>
+                    <p>Vela comestible con sabor cítrico a limón.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-limon">Cantidad:</label>
+                    <input id="cantidad-limon" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de naranja" data-precio="15000">
+                <img src="Imagen_VELA DE NARANJA.png" alt="Vela de naranja">
+                <div class="producto-informacion">
+                    <h3>VELA DE NARANJA</h3>
+                    <p>Vela comestible con sabor a naranja.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-naranja">Cantidad:</label>
+                    <input id="cantidad-naranja" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de café" data-precio="15000">
+                <img src="Imagen_VELA DE CAFE.png" alt="Vela de café">
+                <div class="producto-informacion">
+                    <h3>VELA DE CAFÉ</h3>
+                    <p>Vela comestible con sabor a café.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-cafe">Cantidad:</label>
+                    <input id="cantidad-cafe" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de coco" data-precio="15000">
+                <img src="Imagen_VELA DE COCO.png" alt="Vela de coco">
+                <div class="producto-informacion">
+                    <h3>VELA DE COCO</h3>
+                    <p>Vela comestible con sabor a coco.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-coco">Cantidad:</label>
+                    <input id="cantidad-coco" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de maracuyá" data-precio="15000">
+                <img src="Imagen_VELA DE MARACUYA.png" alt="Vela de maracuyá">
+                <div class="producto-informacion">
+                    <h3>VELA DE MARACUYÁ</h3>
+                    <p>Vela comestible con sabor tropical a maracuyá.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-maracuya">Cantidad:</label>
+                    <input id="cantidad-maracuya" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nombre="Vela de arequipe" data-precio="15000">
+                <img src="Imagen_VELA DE AREQUIPE.png" alt="Vela de arequipe">
+                <div class="producto-informacion">
+                    <h3>VELA DE AREQUIPE</h3>
+                    <p>Vela comestible con sabor a arequipe.</p>
+                    <p class="precio">$15.000 COP</p>
+                    <label for="cantidad-arequipe">Cantidad:</label>
+                    <input id="cantidad-arequipe" class="cantidad-producto" type="number" min="1" max="99" value="1">
+                    <button type="button" class="boton-carrito">Agregar al carrito</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="carrito" class="section-carrito">
+        <div class="titulo-section">
+            <h2>MI CARRITO</h2>
+        </div>
+
+        <div class="carrito-contenido">
+            <p id="carrito-vacio">Tu carrito está vacío.</p>
+            <div id="lista-carrito"></div>
+
+            <div class="carrito-resumen">
+                <p>Total de unidades: <span id="total-unidades">0</span></p>
+                <p>Subtotal: <span id="subtotal-carrito">$0 COP</span></p>
+                <p class="nota">El valor del domicilio se confirmará por separado.</p>
+            </div>
+
+            <button type="button" id="vaciar-carrito">Vaciar carrito</button>
+            <button type="button" id="ir-a-pedido">Continuar con el pedido</button>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-contacto">
+        <div class="titulo-section">
+            <h2>CONTACTO Y PEDIDOS</h2>
+        </div>
+
+        <div class="contacto-contenido">
+            <p>¿Quieres conocer más sobre nuestros productos o realizar un pedido?</p>
+            <p>¡Contáctanos y haz de tu sueño una realidad!</p>
+
+            <form id="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="100">
                 </div>
 
-                <div class="contenido-inicio">
-                    <article class="informacion">
-                        <h3>¿Quiénes somos y por qué creamos FLAMIA?</h3>
-                        <p>Somos un emprendimiento que busca innovar en las celebraciones mediante ideas creativas y originales.</p>
-                        <p>FLAMIA fue creada para transformar las velas tradicionales en una experiencia diferente, haciendo que cada celebración sea más especial.</p>
-                        <p>Nuestro objetivo es ofrecer productos que no solo decoren, sino que también sorprendan y deleiten a quienes los disfrutan.</p>
-                    </article>
-
-                    <article class="informacion">
-                        <h3>¿Qué es FLAMIA?</h3>
-                        <p>FLAMIA es un emprendimiento de velas comestibles artesanales que combina creatividad, sabor y diseño.</p>
-                        <p>Nuestras velas no solo iluminan, sino que también deleitan con sus sabores únicos y presentaciones innovadoras</p>
-                        <p>Creamos productos originales que pueden utilizarse para decorar y acompañar diferentes postres, convirtiendo las celebraciones en experiencias más llamativas, divertidas y especiales.</p>
-
-                    </article>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required maxlength="150">
                 </div>
-            </section>
-    
-        <section id="productos" class="section-productos">
 
-            <div class="titulo-section">
-                <h2>NUESTROS PRODUCTOS</h2>
-            </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required maxlength="30">
+                </div>
 
-            <div class="contenedor-productos">
-                <article class="producto">
-                    <img src="Imagen_VELA DE CHOCOLATE.png" alt="Vela de Chocolate">
-            </div>
+                <div class="campo">
+                    <label for="tipo-pedido">Tipo de solicitud</label>
+                    <select id="tipo-pedido" name="tipoPedido" required>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Pedido normal">Pedido normal</option>
+                        <option value="Vela personalizada">Vela personalizada</option>
+                    </select>
+                </div>
 
-            <div class="producto-informacion">
-                <h3>VELA DE CHOCOLATE</h3>
-                <p>Vela comestible con sabor a chocolate, dulce y cremoso.</p>
-                <p>$15.000 COP</p>
-            </div>
-                </article>
+                <div class="campo">
+                    <label for="tipo-entrega">Entrega</label>
+                    <select id="tipo-entrega" name="tipoEntrega" required>
+                        <option value="Domicilio">A domicilio</option>
+                        <option value="Por acordar">Por acordar</option>
+                    </select>
+                </div>
 
-            <div class="contenedor-productos">    
-                <article class="producto">
-                    <img src="Imagen_VELA DE VAINILLA.png" alt="Vela de Vainilla">
-            </div>
+                <div class="campo">
+                    <label for="ciudad">Ciudad o municipio</label>
+                    <input type="text" id="ciudad" name="ciudad" maxlength="100">
+                </div>
 
-            <div class="producto-informacion">
-                <h3>VELA DE VAINILLA</h3>
-                <p>Vela comestible con sabor a vainilla, suave y aromática.</p>
-                <p>$12.000 COP</p>
-            </div>
-                </article>
+                <div class="campo campo-completo">
+                    <label for="direccion">Dirección de entrega</label>
+                    <input type="text" id="direccion" name="direccion" maxlength="200" placeholder="Calle, carrera, número, apartamento">
+                </div>
 
-            <div class="contenedor-productos">
-                <article class="producto">
-                    <img src="Imagen_VELA DE FRUTOS ROJOS.png" alt="Vela de Frutos Rojos">
-            </div>
+                <div class="campo">
+                    <label for="barrio">Barrio</label>
+                    <input type="text" id="barrio" name="barrio" maxlength="100">
+                </div>
 
-            <div class="producto-informacion">
-                <h3>VELA DE FRUTOS ROJOS</h3>
-                <p>Vela comestible con sabor a frutos rojos, fresca y afrutada.</p>
-                <p>$14.000 COP</p>
-            </div>
-                </article>
-        </section>
+                <div class="campo">
+                    <label for="referencia">Indicaciones para llegar</label>
+                    <input type="text" id="referencia" name="referencia" maxlength="300">
+                </div>
 
-        <section id="contacto" class="section-contacto">
-            <div class="titulo-section">
-                <h2>CONTACTO</h2>
-            </div>
-            <div class="contacto-contenido">
-                <p>¿Quieres conocer más sobre nuestros productos o realizar un pedido?</p>
-                <p>¡Contáctanos y haz de tu sueño una realidad!</p>
-            </div>
-        </section>
-    </main>
+                <div class="campo campo-completo">
+                    <label for="personalizacion">Detalles de la vela personalizada</label>
+                    <textarea id="personalizacion" name="personalizacion" rows="4" maxlength="1500" placeholder="Describe el sabor, los colores, el diseño y la ocasión."></textarea>
+                </div>
 
-    <footer class="pie-pagina">
-        <p> &copy; 2026 FLAMIA - Todos los derechos reservados.</p>
-    </footer>
+                <div class="campo campo-completo">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="Consulta de productos">Consulta de productos</option>
+                        <option value="Pedido">Pedido</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo campo-completo">
+                    <label for="mensaje">Mensaje adicional</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" maxlength="2000"></textarea>
+                </div>
+
+                <div class="campo campo-completo">
+                    <label class="aceptacion">
+                        <input type="checkbox" id="aceptar-datos" required>
+                        Confirmo que los datos proporcionados son correctos y autorizo que se utilicen para gestionar mi solicitud.
+                    </label>
+                </div>
+
+                <div class="campo campo-completo">
+                    <button type="submit" id="boton-enviar">Enviar solicitud</button>
+                    <p id="estado-formulario" role="status" aria-live="polite"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="pie-pagina">
+    <p>&copy; 2026 FLAMIA - Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
