@@ -208,7 +208,7 @@
             <p>¿Quieres conocer más sobre nuestros productos o realizar un pedido?</p>
             <p>¡Contáctanos y haz de tu sueño una realidad!</p>
 
-            <form id="formulario-contacto">
+            <form name="flamia-pedidos" id="formulario-contacto" method="POST" data-netlify="true">
                 <div class="campo">
                     <label for="nombre">Nombre completo</label>
                     <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="100">
@@ -282,7 +282,7 @@
 
                 <div class="campo campo-completo">
                     <label class="aceptacion">
-                        <input type="checkbox" id="aceptar-datos" required>
+                        <input type="checkbox" id="aceptar-datos" name="aceptarDatos" value="Sí" required>
                         Confirmo que los datos proporcionados son correctos y autorizo que se utilicen para gestionar mi solicitud.
                     </label>
                 </div>
